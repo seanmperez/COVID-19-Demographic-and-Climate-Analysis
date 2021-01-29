@@ -58,6 +58,7 @@ This dataset has near complete coverage which is great since it will be used for
 
 In order to merge data these disparate data sources we need a common key. Luckily the census and covid datasets have this key, FIPS codes. The weather dataset does not, so we need reverse geocode the latitude longitutde to extract the FIPS code region each weather station is in. Enough words, here is the schema below:
 
+![Alt text](https://github.com/seanmperez/COVID-19-Demographic-and-Climate-Analysis/blob/main/Figures/data_schema.png)
 
 # Results
 
