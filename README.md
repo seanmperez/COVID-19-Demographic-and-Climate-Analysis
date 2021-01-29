@@ -87,6 +87,15 @@ _insert heatmap_
 
 ### Predictive Models
 
+After recognizing that the features aren't closer to normal, and that the residuals of our regression models don't meet the whole "identically and independently distributed" core assumption, I wanted to use a non-parametric model for predictive analytics. Hence I turned to the kaggle favorite, XGBoost. 
+
+XGBoost has many advantages over other algorithms including:
+1. **Bagging** - Individual trees are trained on a subset of both the data and features preventing overfitting.
+2. **Boosting** - The errors (residuals) of the trees are more heavily weighted (boosted), and corrected downstream, reducing bias.
+3. **Handling of missing data**
+4. **Parallelization** 
+
+
 # Acknowledgements
 
 There are quite a few people/articles I'd like to thank for inspiration.
