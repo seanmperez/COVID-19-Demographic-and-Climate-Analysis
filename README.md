@@ -53,6 +53,12 @@ The Johns Hopkins University Center for Systems Science and Engineering COVID-19
 This dataset has near complete coverage which is great since it will be used for both inference and prediction and contains our target metric, incidence rate.
 ![Alt text](https://github.com/seanmperez/COVID-19-Demographic-and-Climate-Analysis/blob/main/Figures/Counties_2019_COVID19.png)
 
+
+### Merging the data
+
+In order to merge data these disparate data sources we need a common key. Luckily the census and covid datasets have this key, FIPS codes. The weather dataset does not, so we need reverse geocode the latitude longitutde to extract the FIPS code region each weather station is in. Enough words, here is the schema below:
+
+
 # Results
 
 # Inference
