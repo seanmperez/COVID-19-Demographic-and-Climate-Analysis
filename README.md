@@ -68,9 +68,9 @@ For inference, I use linear regression since it allows us to easily assess the d
 
 Since linear regression is a parametric model, transforming our features closer to a normal distribution is a key to success! 
 
-_insert image of raw distribution_
+![Alt text](https://github.com/seanmperez/COVID-19-Demographic-and-Climate-Analysis/blob/main/Figures/Raw%20Inference%20Data%20Feature%20Distributions.png)
 
-_insert image of transformed distribution_
+![Alt text](https://github.com/seanmperez/COVID-19-Demographic-and-Climate-Analysis/blob/main/Figures/Transformed%20Inference%20Data%20Feature%20Distributions.png)
 
 After feature transformation we need to normalize our features 
 
@@ -78,12 +78,22 @@ For our regularization models, we need to choose a hyperparameter alpha.
 
 We can visualize the effect of different alphas on the weight of each coefficient.
 
-_insert two images of alpha vs coefficients_
+![Alt text](https://github.com/seanmperez/COVID-19-Demographic-and-Climate-Analysis/blob/main/Figures/Ridge_Regression_Coefficients_as_a_function_of_alpha.png)
+![Alt text](https://github.com/seanmperez/COVID-19-Demographic-and-Climate-Analysis/blob/main/Figures/Lasso_Regression_Coefficients_as_a_function_of_alpha.png)
 
 We can then use cross validation to choose the optimal alpha, build each model, and view a heatmap of the coefficients.
 
-_insert heatmap_
+![Alt text](https://github.com/seanmperez/COVID-19-Demographic-and-Climate-Analysis/blob/main/Figures/Heatmap%20of%20the%20Coefficients%20for%20All%20Models.png)
 
+Fantastic, we can see that two features really stick out in all of our models.
+1. The **Percent of Households with Insurance** has a moderate negative correlation (p = 2.9e-05)
+2. The **Temperature Standard Deviation** has a strong positive correlation (p = 1.4e-28)
+
+But do our regression models meet the assumption that the residuals are i.i.d. with u = 0 and constant variance?
+
+![Alt text](https://github.com/seanmperez/COVID-19-Demographic-and-Climate-Analysis/blob/main/Figures/Residual_OLS.png)
+![Alt text](https://github.com/seanmperez/COVID-19-Demographic-and-Climate-Analysis/blob/main/Figures/Residual_Ridge.png)
+![Alt text](https://github.com/seanmperez/COVID-19-Demographic-and-Climate-Analysis/blob/main/Figures/Residual_LASSO.png)
 
 ### Predictive Models
 
@@ -95,6 +105,7 @@ XGBoost has many advantages over other algorithms including:
 3. **Handling of missing data**
 4. **Parallelization** 
 
+![Alt text]()
 
 # Acknowledgements
 
