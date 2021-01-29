@@ -30,7 +30,8 @@ The raw data comes from 3 sources:
 The ACS 1-year, and ACS 5-year 2019 estimates contain US county level data on race, ethnicity, insurance rates, and economic characteristics from the [Census Bureau APIs](https://www.census.gov/data/developers.html).
 
 The ACS 1-year data provides the most current estimates, but also has the lowest coverage. This will be useful for inference, but not for predictive modeling.
-![Alt text](https://github.com/seanmperez/COVID-19-Demographic-and-Climate-Analysis/blob/main/Figures/Counties_2019_ACS1_Census.html)
+
+![Alt text](https://raw.githubusercontent.com/seanmperez/COVID-19-Demographic-and-Climate-Analysis/main/Figures/Counties_2019_ACS1_Census.html)
 
 The ACS 5-year data provides the least current estimates, but has great coverage! This will be our go to for predictive modeling. 
 
