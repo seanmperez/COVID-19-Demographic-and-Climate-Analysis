@@ -62,6 +62,39 @@ In order to merge data these disparate data sources we need a common key. Luckil
 
 # Results
 
-# Inference
+### Inference
 
-# Predictive Models
+For inference, I use linear regression since it allows us to easily assess the direction and weight of each feature making it more intepretable than other algorithms. In order to interpret the significance of the features, I use Ordinary Least Squares hypothesis testing, as well as two types of regularization techniques, Ridge and LASSO regression. Regularization prevents models from overfitting by shrinking the size of the coefficients through an penalization term which is weighted by a hyperparameter, alpha. Whew, that's a mouthful!
+
+Since linear regression is a parametric model, transforming our features closer to a normal distribution is a key to success! 
+
+_insert image of raw distribution_
+
+_insert image of transformed distribution_
+
+After feature transformation we need to normalize our features 
+
+For our regularization models, we need to choose a hyperparameter alpha.
+
+We can visualize the effect of different alphas on the weight of each coefficient.
+
+_insert two images of alpha vs coefficients_
+
+We can then use cross validation to choose the optimal alpha, build each model, and view a heatmap of the coefficients.
+
+_insert heatmap_
+
+
+### Predictive Models
+
+# Acknowledgements
+
+There are quite a few people/articles I'd like to thank for inspiration.
+
+1. **Francisco Utrera** - Spent many a night discussing experimental design and feature transformations over tea.
+2. **Data 100** - This class final project was the starting point of this analaysis and provided a few basic functions to download the weather data. The class also went into great depth of the linear algebra and loss functions behind common machine learning algorithms!
+3. **Articles** - What would we do without asking the internet for help?
+  - https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/
+  - https://towardsdatascience.com/getting-census-data-in-5-easy-steps-a08eeb63995d
+  - https://www.kdnuggets.com/2017/10/xgboost-concise-technical-overview.html
+  -
