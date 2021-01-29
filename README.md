@@ -11,7 +11,13 @@ I find data comforting in this time of distress, so I sought out what types of q
 1. The plummeting temperatures in the New Year
 2. Growing inequality across the United States
 
-Below is my analysis to answer the question **What weather and demographic features are the most important drivers to COVID-19 infection rates**?
+Below is my analysis to answer the question:
+
+_**What demographic and weather features are the most important drivers to COVID-19 infection rates among US counties**?_
+
+and
+
+_**Can we use these  features to predict infections rates among counties?**_
 
 # Data
 
