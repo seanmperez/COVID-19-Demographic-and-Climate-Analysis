@@ -26,15 +26,29 @@ All of this data is public and some are held in massive databases. No worries as
 The raw data comes from 3 sources:
 
 ### 1. Census
+
 The ACS 1-year, and ACS 5-year 2019 estimates contain US county level data on race, ethnicity, insurance rates, and economic characteristics from the [Census Bureau APIs](https://www.census.gov/data/developers.html).
 
+The ACS 1-year data provides the most current estimates, but also has the lowest coverage. This will be useful for inference, but not for predictive modeling.
+![Alt text](https://github.com/seanmperez/COVID-19-Demographic-and-Climate-Analysis/blob/main/Figures/Counties_2019_ACS1_Census.html)
+
+The ACS 5-year data provides the least current estimates, but has great coverage! This will be our go to for predictive modeling. 
 
 ### 2. Climate (temperature and precipitation)
-The daily Global Historical Climatology Network (GHCN) dataset contains global daily climate data (including temperature and precipitation) across 100,000 stations (read more here: https://www.ncdc.noaa.gov/ghcn-daily-description). The stations metadata provides that latitude and longitutude. 
 
+The daily Global Historical Climatology Network (GHCN) [dataset](https://www.ncdc.noaa.gov/ghcn-daily-description) contains climate data (including temperature and precipitation) across 100,000 stations. The station metadata provides that latitude and longitutude. 
+
+This data has little coverage, and has a slight bias since most stations are in the West. 
+![Alt text](https://github.com/seanmperez/COVID-19-Demographic-and-Climate-Analysis/blob/main/Figures/Counties_2019_ACS1_Weather.html)
+
+In order to use this data for our predictive models, we will have to do some data imputation for missing counties.
 
 ### 3. COVID-19 
-The Johns Hopkins University Center for Systems Science and Engineering COVID-19 dataset contains global daily COVID-19 metrics at the County level for US data (read more here: https://github.com/CSSEGISandData/COVID-19). This dataset also has a key for US County names with their respective FIPS codes also found in the Johns Hopkins University Center for Systems Science and Engineering [github repo](https://github.com/CSSEGISandData/COVID-19).
+
+The Johns Hopkins University Center for Systems Science and Engineering COVID-19 [dataset](https://github.com/CSSEGISandData/COVID-19) contains global daily COVID-19 metrics at the County level for US data. This dataset also has a key for US County names with their respective [FIPS codes](https://github.com/CSSEGISandData/COVID-19).
+
+This dataset has near complete coverage which is great since it will be used for both inference and prediction and contains our target metric, incidence rate.
+![Alt text](https://github.com/seanmperez/COVID-19-Demographic-and-Climate-Analysis/blob/main/Figures/Counties_2019_ACS1_COVID19.html)
 
 # Results
 
