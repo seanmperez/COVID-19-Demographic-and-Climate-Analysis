@@ -91,10 +91,9 @@ _insert heatmap_
 
 There are quite a few people/articles I'd like to thank for inspiration.
 
-1. **Francisco Utrera** - Spent many a night discussing experimental design and feature transformations over tea.
+1. [**Francisco Utrera**](https://medium.com/@fjulozada) - A machine learning researcher, Product Manager, and most importantly, housemate, spent many a night discussing experimental design and feature transformations over hot tea.
 2. **Data 100** - This class final project was the starting point of this analaysis and provided a few basic functions to download the weather data. The class also went into great depth of the linear algebra and loss functions behind common machine learning algorithms!
 3. **Articles** - What would we do without asking the internet for help?
   - https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/
   - https://towardsdatascience.com/getting-census-data-in-5-easy-steps-a08eeb63995d
   - https://www.kdnuggets.com/2017/10/xgboost-concise-technical-overview.html
-  -
